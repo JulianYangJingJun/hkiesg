@@ -15,40 +15,29 @@
     <div class="ml-84 flex-row innernav">
     {% for block in menu_data.menu.menu_items %}
     {% for item in block.value %}   
-
-
-
-    {% if forloop.first %}      
-        {% with request.get_host as host %}        
-        {% if host == 'www.hkiesg.org.cn' %} 
-        
-        <span class="font ml-40">
+    {% if forloop.first %}              
+        {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
           <span class="font">
             <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: black;">
                 {{ item.title_zh }}
             </a></span>
-            {% elif host == 'en.hkiesg.org.cn' %} <span class="font">
+        {% else %}<span class="font">
           <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: black;">
               {{ item.title_en }}
           </a></span>
         {% endif %}
         {% else %} 
-        {% if host == 'www.hkiesg.org.cn' %} 
-         <span class="font ml-40">
+        {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
           <span class="font navitem">
             <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: black;">
                 {{ item.title_zh }}
             </a></span>
-            {% elif host == 'en.hkiesg.org.cn' %} <span class="font navitem">
+        {% else %}<span class="font navitem">
           <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: black;">
               {{ item.title_en }}
           </a></span>
         {% endif %}
         {% endif %}
-
-
-
-
     {% endfor %}
     {% endfor %}
   </div>
