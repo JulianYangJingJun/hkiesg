@@ -62,7 +62,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
-    "django.middleware.locale.LocaleMiddleware"
+    "django.middleware.locale.LocaleMiddleware",
+    'wagtail.core.middleware.SiteMiddleware'
 ]
 
 ROOT_URLCONF = "hkiesg.urls"
