@@ -50,29 +50,39 @@
               <div class="ml-84 flex-row">
               {% for block in menu_data.menu.menu_items %}
               {% for item in block.value %}   
-              {% if forloop.first %}              
-                  {% if request.site.hostname == 'www.hkiesg.org.cn' %} <span class="font ml-40">
+
+              {% if forloop.first %}            
+              
+              {% with request.get_host as host %}
+
+              {% if host == 'www.hkiesg.org.cn' %} <span class="font ml-40">
                     <span class="font">
                       <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
                           {{ item.title_zh }}
                       </a></span>
-                  {% elif request.site.hostname == 'en.hkiesg.org.cn' %}<span class="font">
+                      % elif host == 'en.hkiesg.org.cn' %} <span class="font">
                     <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: white;">
                         {{ item.title_en }}
                     </a></span>
                   {% endif %}
+
+                  
                   {% else %}  {# 其他链接添加 ml-40 类 #}
-                  {% if request.site.hostname == 'www.hkiesg.org.cn' %} <span class="font ml-40">
+                  {% if host == 'www.hkiesg.org.cn' %} <span class="font ml-40">
                     <span class="font ml-40">
                       <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
                           {{ item.title_zh }}
                       </a></span>
-                      {% elif request.site.hostname == 'en.hkiesg.org.cn' %}<span class="font ml-40">
-                    <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: white;">
-                        {{ item.title_en }}
-                    </a></span>
+                      % elif host == 'en.hkiesg.org.cn' %} 
+                      <span class="font ml-40">
+                        <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: white;">
+                        {{ item.title_en }} 
+                        </a></span>
                   {% endif %}
                   {% endif %}
+
+
+
               {% endfor %}
               {% endfor %}
             </div>
