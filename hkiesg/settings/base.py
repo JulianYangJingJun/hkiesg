@@ -62,8 +62,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
-    "django.middleware.locale.LocaleMiddleware",
-    'wagtail.core.middleware.SiteMiddleware'
+    "django.middleware.locale.LocaleMiddleware" 
 ]
 
 ROOT_URLCONF = "hkiesg.urls"
@@ -89,7 +88,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "hkiesg.wsgi.application"
 
-ALLOWED_HOSTS = ['en.hkiesg.org.cn', 'www.hkiesg.org.cn', 'localhost','127.0.0.1']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
