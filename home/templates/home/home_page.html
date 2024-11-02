@@ -37,7 +37,7 @@
 
     {% block content %}
 <body>
-  {{request.site.hostname}}
+
     <div class="flex-col page">
         <div class="flex-col self-stretch section ">
           <div class="flex-row justify-between self-stretch w1400 center">
@@ -323,3 +323,6 @@
 </body>
 {% endblock content %}
 </html>
+{% with request.get_host as host %}cc
+{{host}}dd
+{{request.site.hostname}}dd
