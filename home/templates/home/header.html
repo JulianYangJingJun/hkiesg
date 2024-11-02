@@ -16,7 +16,7 @@
     {% for block in menu_data.menu.menu_items %}
     {% for item in block.value %}   
     {% if forloop.first %}              
-        {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
+        {% if request.site.hostname == 'www.hkiesg.org.cn' %} <span class="font ml-40">
           <span class="font">
             <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: black;">
                 {{ item.title_zh }}
@@ -27,7 +27,7 @@
           </a></span>
         {% endif %}
         {% else %} 
-        {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
+        {% if request.site.hostname == 'www.hkiesg.org.cn' %} <span class="font ml-40">
           <span class="font navitem">
             <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: black;">
                 {{ item.title_zh }}

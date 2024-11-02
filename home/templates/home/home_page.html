@@ -51,7 +51,7 @@
               {% for block in menu_data.menu.menu_items %}
               {% for item in block.value %}   
               {% if forloop.first %}              
-                  {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
+                  {% if request.site.hostname == 'www.hkiesg.org.cn' %} <span class="font ml-40">
                     <span class="font">
                       <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
                           {{ item.title_zh }}
@@ -62,7 +62,7 @@
                     </a></span>
                   {% endif %}
                   {% else %}  {# 其他链接添加 ml-40 类 #}
-                  {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
+                  {% if request.site.hostname == 'www.hkiesg.org.cn' %} <span class="font ml-40">
                     <span class="font ml-40">
                       <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
                           {{ item.title_zh }}
