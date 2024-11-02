@@ -56,7 +56,7 @@
                       <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
                           {{ item.title_zh }}
                       </a></span>
-                  {% else %}<span class="font">
+                  {% elif request.site.hostname == 'en.hkiesg.org.cn' %}<span class="font">
                     <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: white;">
                         {{ item.title_en }}
                     </a></span>
@@ -67,7 +67,7 @@
                       <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
                           {{ item.title_zh }}
                       </a></span>
-                  {% else %}<span class="font ml-40">
+                      {% elif request.site.hostname == 'en.hkiesg.org.cn' %}<span class="font ml-40">
                     <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: white;">
                         {{ item.title_en }}
                     </a></span>
@@ -94,6 +94,7 @@
               </span>
               <span class="font_3">
                 {{page.banner_title2}}
+                
                 <br />
               </span>
             </div>
