@@ -1,0 +1,275 @@
+ 
+ 
+{% load i18n wagtailcore_tags %}
+{% load static wagtailcore_tags wagtailuserbar %}
+ 
+    <div class="flex-col page">
+      <div class="flex-col self-stretch section ">
+        <div class="flex-row justify-between self-stretch w1400 center">
+          <div class="flex-row items-center">
+            <img
+              class="image"
+              src="{% static 'images/indexlogo.png' %}"
+            />
+            <div class="ml-84 flex-row">
+              <span class="font">首 页</span>
+              <span class="font ml-40">关于我们</span>
+              <span class="font ml-40">会 员</span>
+              <span class="font ml-40">服 务</span>
+              <span class="font ml-40">活 动</span>
+              <span class="font ml-40">加入我们</span>
+            </div>
+          </div>
+          <div class="flex-col self-start group">
+            <div class="flex-row items-center self-stretch group_2">
+              <span class="font">中 文</span>
+              <span class="font_2 ml-23">English</span>
+            </div>
+            <div class="self-start section_2"></div>
+          </div>
+        </div>
+        <div class=" w1400 center pt-150">
+          <div class="self-stretch">
+            <span class="font_3">
+              {{page.banner_title1}}
+              <br />
+            </span>
+            <span class="font_3">
+              {{page.banner_title2}}
+              <br />
+            </span>
+          </div>
+          <div class="flex-col justify-start items-center self-start text-wrapper mt-31">
+            <span class="font_4 text">联系我们</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col self-center group_4">
+        <div class="self-center group_5">
+          <span class="text_2">
+            {{page.middle_title}}
+            <br />
+          </span>
+          <span class="text_3">
+            汇聚专业力量，发展可持续创新
+            <br />
+          </span>
+        </div>
+        <div class="mt-32 self-stretch group_6">
+          <span class="font_5 text_4">
+            HKIESG是一个可持续性合作伙伴：部分是顾问，部分是研究实验室，部分是连接器，
+            <br />
+          </span>
+          <span class="font_5 text_5">
+            我们致力于将可持续发展定位为优先事项和竞争优势，用我们的网络连接志同道合的合作伙伴，
+            <br />
+          </span>
+          <span class="font_5 text_6">旨促进香港学术界、工商业界和专业服务界、社会及政府之间充分沟通与合作。</span>
+        </div>
+      </div>
+      <div class="flex-col self-stretch group_7">
+        <div class="flex-col justify-start relative group_8">
+         <div class="greybg">
+          <div class="flex-col section_3 w1400 center">
+            <div class="flex-row">
+              <div class="flex-col equal-division-item_2 group_10">
+                <span class="self-start font_6">宗旨</span>
+                <span class="mt-16 self-stretch font_7 text_9">
+                  善治共贏，负责任的、可持续的增长，即“善治”，共同分享成功，即“共赢”。即人们常说的“商业向善”。这不仅是一种道德责任，更是一种具备长期价值的商业策略。
+                  <br />
+                </span>
+              </div>
+              <div class="flex-col equal-division-item_2 group_11">
+                <span class="self-start font_6 text_7">使命和目标</span>
+                <div class="self-stretch group_13 mt-17">
+                  <span class="font_8 text_10">
+                    我们的使命是推动香港地区可持续发展目标的实现。
+                    <br />
+                  </span>
+                  <span class="font_8 text_12">
+                    我们的目标是充分发挥香港在双循环经济模式中的优势和枢纽作用。
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="flex-col equal-division-item_2 group_12">
+                <span class="self-start font_6 text_8">产业</span>
+                <div class="self-stretch group_14 mt-19">
+                  <span class="font_7 text_11">
+                    论您从事哪个行业，我们都能与您合作,
+                    <br />
+                  </span>
+                  <span class="font_7 text_13">
+                    新能源，高科技，时尚，数字化、金融、供应链、服务、教育。
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-42 flex-col group_15">
+              <div class="self-start section_4"></div>
+              <div class="self-center section_4"></div>
+              <div class="self-end section_4"></div>
+            </div>
+          </div>
+</div>
+          <div class="flex-row equal-division group_9">
+            <img
+              class="image_2 equal-division-item"
+              src="{% static 'images/indexctimg1.png' %}" 
+              
+            />
+            <img
+              class="image_2 equal-division-item ml-43"
+              src="{% static 'images/indexctimg2.png' %}" 
+            />
+            <img
+              class="image_2 equal-division-item ml-43"
+              src="{% static 'images/indexctimg3.png' %}" 
+            />
+          </div>
+        </div>
+
+        <div class="wrap-bg-section_5">
+        <div class="flex-col section_5 w1400 center">
+          <div class="flex-row justify-between self-stretch">
+            <div class="flex-col items-start group_18">
+              <div class="group_19">
+                <span class="font_10 text_14">
+                  About
+                  <br />
+                </span>
+                <span class="font_10 text_14">us</span>
+              </div>
+              <span class="font_11 text_15">关于我们</span>
+              <span class="font_4 text_16">协会宗旨</span>
+              <span class="font_4 text_18">组织结构</span>
+            </div>
+            <div class="flex-col group_16">
+              <div class="self-stretch group_17">
+                <span class="font_9 text_14">
+                  协会简介
+                  <br />
+                </span>
+                <span class="font_9 text_14">
+                  香港可持续发展协会是专注于环境、社会和治理（ESG）领域的非盈利性组织，致力于推动香港地区可持续发展目标的实现，促进香港与内地以及亚太、中东地区的企业和投资者在ESG领域的发展与合作，为香港参与共建“一带一路”提供支撑与服务。
+                </span>
+              </div>
+              <div class="flex-row items-center self-start group_20 view mt-33">
+                <span class="font_12 text_14 text_17">了解详情</span>
+                <img
+                  class="shrink-0 image_3 ml-5"
+                  src="{% static 'images/arrow.png' %}"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="self-start font_4 mt-19">合作伙伴</span>
+          <span class="self-start font_4 mt-19">合作伙伴</span>
+        </div>
+
+</div>
+      </div>
+      <div class="flex-row justify-between items-center self-stretch group_21 w1400 center">
+        <div class="flex-col group_22">
+          <div class="flex-col self-stretch">
+            <span class="self-start font_13 text_19">会 员</span>
+            <div class="mt-18 self-stretch group_23">
+              <span class="font_14 text_14 text_20">
+                HKIESG作为非盈利机构，由业界有志之士和专业力量所组成，旨在推动香港成为国际可持续发展的典范，充分发挥香港在“双循环”可持续发展新格局中的重要枢纽作用。为了实现这一目标，HKIESG强调要加强香港与内地、中东与亚太地区在ESG领域的合作。
+                <br />
+              </span>
+              <span class="font_14 text_14">
+                HKIESG会员计划面向香港、大陆、中东以及亚太地区的所有参与者开放。加入会员须经过HKIESG 执行委员会批准。
+              </span>
+            </div>
+            <div class="mt-18 flex-row self-stretch">
+              <div class="flex-col justify-start items-center text-wrapper_2">
+                <span class="font_4 text_21">会员福利</span>
+              </div>
+              <div class="ml-12 flex-col justify-start items-center text-wrapper_2">
+                <span class="font_4 text_21">成为会员</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-row items-center self-start group_20 mt-47">
+            <span class="font_12 text_14 text_17">了解详情</span>
+            <img
+              class="shrink-0 image_3 ml-5"
+              src="{% static 'images/arrow.png' %}"
+            />
+          </div>
+        </div>
+        <img
+          class="image_4"
+          src="{% static 'images/indexctimg4.png' %}"
+        />
+      </div>
+      <div class="flex-row justify-between self-stretch group_24 w1400 center">
+        <img
+          class="image_5"
+          src="{% static 'images/indexctimg5.png' %}"
+        />
+        <div class="flex-col self-start group_22 view_2">
+          <span class="self-start font_13 text_22">工作委员会</span>
+          <span class="self-stretch font_14 text_14 text_23">
+            香港可持续发展协会将工作重点重新聚焦在产业赋能和可持续创新发展。围绕产学研投四个步骤，设立“产业促进委员会”、“学术委员会”、“合规委员会”、“投资委员会”以及“文化促进委员会”，并由秘书处负责所有活动执行与项目推广。
+          </span>
+          <div class="flex-row items-center self-start group_20 view_3">
+            <span class="font_12 text_14 text_17">了解详情</span>
+            <img
+              class="shrink-0 image_3 ml-5"
+              src="{% static 'images/arrow.png' %}"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="wrap-bg-section_6">
+      <div class="flex-col self-stretch section_6 w1400 center">
+        <div class="flex-row justify-between">
+          <div class="flex-col items-start group_26">
+            <span class="font_10 text_14 text_25">Services</span>
+            <span class="font_11 text_26">服务</span>
+            <span class="font_4 text_27">服务框架</span>
+          </div>
+          <div class="group_25">
+            <span class="text_14 text_24">
+              我们来这里是为了创造一些新的东西
+              <br />
+            </span>
+            <span class="font_9 text_14">
+              即使处在一个不确定和不断变化的世界中，消费者的品味不断变化，技术不断进步，政策制定不稳定，企业依然需要像以往一样快速适应和预测市场。
+              <br />
+            </span>
+            <span class="font_9 text_14">
+              聚焦可持续创新发展，将香港打造成为“国际创科中心”
+              <br />
+            </span>
+          </div>
+        </div>
+        <div class="flex-col group_27 mt-17">
+          <span class="self-start font_4 text_28">交付产品</span>
+          <div class="flex-row justify-evenly items-center self-center group_28">
+            <span class="font_12 text_14 text_29">了解详情</span>
+            <img
+              class="image_3"
+              src="{% static 'images/arrow.png' %}"
+            />
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="section_indexme">
+<div class="w1400 center">
+  <span class="self-center font_15 text_30 nvlink">相关连接</span>
+      <img
+              class="logo-link center"
+              src="{% static 'images/logolink.png' %}"
+            />
+</div>
+</div>
+
+             
+
+ 

@@ -1,0 +1,117 @@
+{% load static wagtailcore_tags wagtailuserbar %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link href="{% static 'css/swiper-bundle.min.css' %}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="flex-col page">
+      <div class="flex-col self-stretch sc-section ">
+  
+        {% include 'home/header.html' %}
+
+        <div class="innerbanner gybanner">
+        <div class=" w1400 center pt-100">
+     
+          <!-- <div class="">
+           <img src="{% static 'images/gy1.png' %}">  
+          </div> -->
+
+          <div class="self-stretch">
+            <span class="font_20">
+              ABOUT 
+              <br />
+            </span>
+            <span class="font_20">
+              US
+              <br />
+            </span>
+            <span class="font_20 mt-31" style="font-size: 35px;margin-top: 10px;">
+              关于我们
+              <br />
+            </span>
+          </div>
+          <div class="flex-col justify-start items-center self-start text-wrapper mt-31">
+            <span class="font_4 text">联系我们</span>
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+</div>
+  
+
+<!-- {% include 'news/news_list.html' %} -->
+<!-- 
+<div class="insection ingy1">
+  <h2 style="text-align: center; margin-top: 180px;margin-bottom: 20px;font-size:35px;color: #1288a6;letter-spacing: 3px;">协会简介</h2>
+  <div style="text-align: center;">
+    <span class="font_9 text_14">
+    香港可持续发展协会是专注于环境、社会和治理（ESG）领域的非盈利性组织，致力于推动香港地区可持续发展目标的实现，
+  </span>
+    <br>
+    <span class="font_9 text_14">
+    促进香港与内地以及亚太、中东地区的企业和投资者在ESG领域的发展与合作，为香港参与共建“一带一路”提供支撑与服务。
+    </span>
+    
+
+  </div>
+</div> -->
+<div class="insection ingy1"> </div>
+<div class="insection ingy2">
+  
+</div>
+<div class="insection ingy3">
+  
+</div>
+<div class="insection ingy4">
+  
+</div>
+<div class="ingy5-wrap">
+  <div class="insection ingy5">
+  
+</div>
+<div class="ingy6-wrap">
+    <div class="insection ingy6">   
+</div>
+<div class="w1400 center swiper-wrap-container">
+
+<div class="swiper" id="gyswiper">
+  <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="{% static 'images/linlogo1.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo2.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo3.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo1.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo2.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo3.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo1.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo2.png' %}"></div>
+      <div class="swiper-slide"><img src="{% static 'images/linlogo3.png' %}"></div>
+  </div>
+</div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+{% include 'home/footer.html' %}
+ 
+  </body>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+  <script type="text/javascript">
+    var mySwiper = new Swiper('.swiper', {
+  autoplay: true,
+    loop: true,
+    slidesPerView :4,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+})
+  </script>
+</html>

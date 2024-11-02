@@ -1,0 +1,77 @@
+{% load i18n static wagtailcore_tags wagtailimages_tags menu_tags wagtailuserbar %}
+{% get_main_menu as menu_data %}
+<div class="flex-row justify-between self-stretch w1400 center navwrap">
+  <div class="flex-row items-center">
+ 
+
+    {% if site_logo and site_logo.logo %}
+    {% image site_logo.logo original as logo_image %}
+    <a href="/" class="logo">
+        <img src="{{ logo_image.url }}" alt="{{ site_logo.alt_text }}" class="image">
+    </a>
+  {% endif %}
+
+
+    <div class="ml-84 flex-row innernav">
+    {% for block in menu_data.menu.menu_items %}
+    {% for item in block.value %}   
+    {% if forloop.first %}              
+        {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
+          <span class="font">
+            <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: black;">
+                {{ item.title_zh }}
+            </a></span>
+        {% else %}<span class="font">
+          <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: black;">
+              {{ item.title_en }}
+          </a></span>
+        {% endif %}
+        {% else %} 
+        {% if menu_data.current_language == 'zh-hans' %} <span class="font ml-40">
+          <span class="font navitem">
+            <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: black;">
+                {{ item.title_zh }}
+            </a></span>
+        {% else %}<span class="font navitem">
+          <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: black;">
+              {{ item.title_en }}
+          </a></span>
+        {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </div>
+
+
+
+
+
+
+<!-- 
+    <div class="ml-84 flex-row innernav">
+      <span class="font"><a href="{% pageurl page %}" style="color: black;">首 页</a></span>
+      <span class="font navitem"><a href="/about" style="color: black;">关于我们</a></span>
+      <span class="font navitem"><a href="/member" style="color: black;">会 员</a></span>
+      <span class="font navitem"><a href="/service" style="color: black;">服 务</a></span>
+      <span class="font navitem"><a href="/activities" style="color: black;">活 动</a></span>
+      <span class="font navitem"><a href="/" style="color: black;">加入我们</a></span>
+    </div>
+
+-->
+
+
+
+
+
+
+
+
+  </div>
+  <div class="flex-col self-start group innernav">
+    <div class="flex-row items-center self-stretch group_2 ">
+      <span class="font"><a href="http://www.hkiesg.org.cn/" style="color: black;">中 文</a></span>
+          <span class="font_2 ml-23"><a href="http://en.hkiesg.org.cn/" style="color: black;">English</a></span>
+    </div>
+    <div class="self-start section_2"></div>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+
+{% load i18n wagtailcore_tags menu_tags %}
+{% get_main_menu as menu_data %}
+{% load static %}
+<div class="footer-wrap ">
+    <div class="flex-col section_8 w1400 center">
+          <div class="flex-row justify-between group_34">
+            <div class="flex-row">
+              <a href="/">
+              <img
+                class="image_16"
+                src="{% static 'images/blogo.png' %}"
+              />
+              </a>
+
+
+
+
+              <div class="ml-70 flex-row self-start group_35"> 
+
+                {% for block in menu_data.menu.menu_items %}
+                {% for item in block.value %}   
+                {% if forloop.first %}              
+                      {% if menu_data.current_language == 'zh-hans' %} 
+                        <span class="ml-24 font">
+                          <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
+                              {{ item.title_zh }}
+                          </a></span>
+                      {% else %}
+                        <span class="ml-24 font">
+                        <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: white;">
+                            {{ item.title_en }}
+                        </a></span>
+                      {% endif %}
+                    {% else %} 
+                      {% if menu_data.current_language == 'zh-hans' %} 
+                        <span class="ml-24 font">
+                          <a href="{% if item.link_page_zh %}{% pageurl item.link_page_zh %}{% else %}#{% endif %}" style="color: white;">
+                              {{ item.title_zh }}
+                          </a></span>
+                      {% else %}<span class="ml-24 font">
+                        <a href="{% if item.link_page_en %}{% pageurl item.link_page_en %}{% else %}#{% endif %}" style="color: white;">
+                            {{ item.title_en }}
+                        </a></span>
+                      {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% endfor %}
+ 
+
+
+
+              </div>
+
+
+
+
+            </div>
+            <div class="flex-col self-start group_36">
+              <div class="flex-row items-center self-stretch group_2">
+                <span class="font">中 文</span>
+                <span class="ml-22 font_2">English</span>
+              </div>
+              <div class="self-start section_2"></div>
+            </div>
+          </div>
+          <div class="mt-96 flex-col">
+            <div class="flex-row self-stretch group_37">
+              <div class="shrink-0 self-center group_38">
+                <span class="font_16">
+                  地址
+                  <br />
+                </span>
+                <span class="font_16">香港中环德辅道中141号中保集团大厦18楼</span>
+              </div>
+              <div class="flex-row shrink-0 self-center group_39">
+                <div class="shrink-0 group_38">
+                  <span class="font_16">
+                    电子邮件
+                    <br />
+                  </span>
+                  <span class="font_16">info@hkiesg.com</span>
+                </div>
+                <div class="ml-24 shrink-0 group_38">
+                  <span class="font_16">
+                    电话
+                    <br />
+                  </span>
+                  <span class="font_16">（+852）6877 0745</span>
+                </div>
+              </div>
+              <div class="flex-row shrink-0 self-start group_40">
+                <img
+                  class="image_17"
+                  src="{% static 'images/wx.png' %}"
+                />
+                <div class="ml-24 flex-col justify-start items-center text-wrapper_3">
+                  <span class="font_4 text_35">联系我们</span>
+                </div>
+              </div>
+            </div>
+            <span class="self-start text_36 mt-19">© 2024hkiesg . All rights reserved</span>
+          </div>
+        </div>
+        </div>

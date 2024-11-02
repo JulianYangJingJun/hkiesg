@@ -1,0 +1,53 @@
+{% load i18n wagtailcore_tags %}
+{% load static wagtailcore_tags wagtailuserbar %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+  </head>
+  <body> 
+
+ 
+
+    <div class="flex-col page"></div>
+      <div class="flex-col self-stretch sc-section ">
+        
+        {% include 'home/header.html' %}
+        <div class="innerbanner hdbanner">
+        <div class=" w1400 center pt-150">
+     
+          <div class="">
+           <img src="{% static 'images/hd1.png' %}">
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="insection inhd1">
+  
+</div>
+<div class="insection inhd2">
+  
+</div>
+
+
+          {% include 'home/footer.html' %}
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News List</title>
+</head>
+<body>
+    <h1>新闻列表</h1>
+    {% if news_list %}
+    <p>找到 {{ news_list.count }} 条新闻</p>
+    {% for article in news_list %}
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.subtitle }}</p>
+        <time>{{ article.publish_date|date:"Y-m-d" }}</time>
+        <a href="{% url 'news:detail' article.pk %}">阅读更多</a>
+    {% endfor %}
+{% else %}
+    <p>暂无新闻</p>
+{% endif %}
+</body>
+</html>
