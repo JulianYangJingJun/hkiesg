@@ -807,6 +807,20 @@ img.block {
   font-family: SL;
   line-height: 50px;
 }
+.text_356 {
+  color: #129cbf;
+  font-size: 35px;
+  font-family: SL;
+  line-height: 50px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.text_3563 {
+  color: #000000;
+  font-size: 20px;
+  font-family: SL;
+  line-height: 50px;
+}
 .group_6 {
   line-height: 29px;
   text-align: center;
@@ -1005,6 +1019,10 @@ img.block {
   width: 604.5px;
   padding-left: 41px
 }
+.group_333 {
+  width: 830px;
+  padding-left: 30px
+}
 .font_13 {
   font-size: 35px;
   font-family: SL;
@@ -1025,6 +1043,15 @@ img.block {
   line-height: 28px;
   color: #000000;
 }
+.font_141 {
+  font-size: 15px;
+  font-family: Adobe Heiti Std;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #000000;
+  /*font-weight: bold;  /* 添加加粗属性 */
+
+}
 .text-wrapper_2 {
   padding: 8px 0;
   background-color: #73c9e0;
@@ -1038,6 +1065,10 @@ img.block {
 .image_4 {
   width: 631px;
   height: 404px;
+}
+.aboutimg4 {
+  width: 520px;
+  height: 385px;
 }
 .group_24 {
   margin-top: 125px;
@@ -1349,12 +1380,20 @@ img.block {
 .gybanner{
     background-image: url(../images/gy4.png);
 }
+
+.about_ingy1{
+    height: 290px;
+}
+
 .ingy1{
     height: 290px; 
     background-image: url(../images/gy5.png);
 }
 .ingy2{
     height: 589px; background-image: url(../images/gy6.png);
+}
+.ingy22{
+  height: 589px; 
 }
 .ingy3{
     height: 460px; background-image: url(../images/gy7.png); background-color:#73b466 
