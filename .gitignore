@@ -12,3 +12,4 @@ hikesg.conf
 /build/
 dist/
 .idea/
+__pycache__/

@@ -100,7 +100,7 @@
               </span>
             </div>
             <div class="flex-col justify-start items-center self-start text-wrapper mt-31">
-              <span class="font_4 text">联系我们</span>
+              <span class="font_4 text"><a href="#footer" style="color: white;">联系我们</a></span>
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@
                   </span>
                 </div>
                 <div class="flex-row items-center self-start group_20 view mt-33">
-                  <span class="font_12 text_14 text_17">了解详情</span>
+                  <span class="font_12 text_14 text_17"><a href="/about" style="color: black;">了解详情</a></span>
                   <img
                     class="shrink-0 image_3 ml-5"
                     src="{% static 'images/arrow.png' %}"
@@ -214,8 +214,7 @@
                 </div>
               </div>
             </div>
-            <span class="self-start font_4 mt-19">合作伙伴</span>
-            <span class="self-start font_4 mt-19">合作伙伴</span>
+            <span class="self-start font_4 mt-19">合作伙伴</span> 
           </div>
   
   </div>
@@ -243,7 +242,7 @@
               </div>
             </div>
             <div class="flex-row items-center self-start group_20 mt-47">
-              <span class="font_12 text_14 text_17">了解详情</span>
+              <span class="font_12 text_14 text_17"><a href="/member" style="color: black;">了解详情</a></span>
               <img
                 class="shrink-0 image_3 ml-5"
                 src="{% static 'images/arrow.png' %}"
@@ -266,7 +265,7 @@
               香港可持续发展协会将工作重点重新聚焦在产业赋能和可持续创新发展。围绕产学研投四个步骤，设立“产业促进委员会”、“学术委员会”、“合规委员会”、“投资委员会”以及“文化促进委员会”，并由秘书处负责所有活动执行与项目推广。
             </span>
             <div class="flex-row items-center self-start group_20 view_3">
-              <span class="font_12 text_14 text_17">了解详情</span>
+              <span class="font_12 text_14 text_17"><a href="/activities" style="color: black;">了解详情</a></span>
               <img
                 class="shrink-0 image_3 ml-5"
                 src="{% static 'images/arrow.png' %}"
@@ -300,7 +299,7 @@
           <div class="flex-col group_27 mt-17">
             <span class="self-start font_4 text_28">交付产品</span>
             <div class="flex-row justify-evenly items-center self-center group_28">
-              <span class="font_12 text_14 text_29">了解详情</span>
+              <span class="font_12 text_14 text_29"><a href="/service" style="color: black;">了解详情</a></span>
               <img
                 class="image_3"
                 src="{% static 'images/arrow.png' %}"
@@ -319,8 +318,9 @@
               />
   </div>
   </div>
-
-  {% include 'home/footer.html' %}
+  <div id="footer">
+    {% include 'home/footer.html' %}
+  </div> 
 </body>
 {% endblock content %}
 </html> 
