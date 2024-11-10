@@ -1163,6 +1163,11 @@ img.block {
 .text_20 {
   letter-spacing: 1.5px;
 }
+.text_222 {
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  font-size: 16px;
+}
 .text_17 {
   font-size: 18px;
   line-height: 17px;
@@ -1464,7 +1469,14 @@ img.block {
 } */
 
 
- 
+.esg-report-s {
+  margin-top: 20px; /* 顶部外边距 */
+}
+.esg-report-s p {
+  line-height: 1;
+  margin-bottom: 26px;
+  font-size: 16px; 
+}
 
 .esg-report {
   margin-top: 20px; /* 顶部外边距 */
@@ -1504,4 +1516,25 @@ img.block {
   color: black; /* 设置标题颜色为黑色 */
   margin-right: 10px; /* 右侧外边距 */
   font-size: 24px; /* 字体大小 */
+}
+.service-item {
+  position: relative; /* 使伪元素相对于该元素定位 */
+  padding-left: 20px; /* 为文本留出空间 */
+}
+
+.service-item::before {
+  content: ''; /* 伪元素内容为空 */
+  position: absolute; /* 绝对定位 */
+  left: 0; /* 左侧对齐 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 使点垂直居中 */
+  width: 8px; /* 点的宽度 */
+  height: 8px; /* 点的高度 */
+  background-color: #129cbf; /* 点的颜色 */
+  border-radius: 50%; /* 圆形 */
+}
+
+.group_3333 {
+  width: 746px;
+  padding-left: 30px
 }
