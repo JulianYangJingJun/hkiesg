@@ -37,7 +37,7 @@
             </span>
           </div>
           <div class="flex-col justify-start items-center self-start text-wrapper mt-31">
-            <span class="font_4 text">联系我们</span>
+            <span class="font_4 text"><a href="#footer" style="color: white;">联系我们</a></span>
           </div>
 
 
@@ -46,27 +46,51 @@
       </div>
 </div>
   
-
-<!-- {% include 'news/news_list.html' %} -->
-<!-- 
-<div class="insection ingy1">
-  <h2 style="text-align: center; margin-top: 180px;margin-bottom: 20px;font-size:35px;color: #1288a6;letter-spacing: 3px;">协会简介</h2>
-  <div style="text-align: center;">
+ 
+<div class="insection about_ingy1"  style="text-align: center; margin-top: 125px;">
+  <span class="self-start text_356" >协会简介</span> 
+  <div  style="margin-top: 25px;">
     <span class="font_9 text_14">
     香港可持续发展协会是专注于环境、社会和治理（ESG）领域的非盈利性组织，致力于推动香港地区可持续发展目标的实现，
   </span>
     <br>
     <span class="font_9 text_14">
-    促进香港与内地以及亚太、中东地区的企业和投资者在ESG领域的发展与合作，为香港参与共建“一带一路”提供支撑与服务。
-    </span>
-    
-
+    促进香港与内地以及亚太、中东地区的企业和投资者在ESG领域的发展与合作，为香港参与共建"一带一路”提供支撑与服务。
+    </span> 
   </div>
-</div> -->
-<div class="insection ingy1"> </div>
-<div class="insection ingy2">
-  
+</div>  
+
+
+
+<div class="insection flex-row justify-between items-center self-stretch w1400 center ingy22">
+  <div class="flex-col group_333">
+    <div class="flex-col self-stretch">
+      <span class="self-start text_356">协会宗旨</span>
+      <span class="self-start text_3563">善治共赢</span>
+      <div>
+        <span class="font_141 text_14 text_20">
+          负责任的、可持续的增长，即"善治"，共同分享成功，即"共赢”。即人们常说的"商业向善”。这不仅是一种道德责任，更是一种具备长期价值的商业策略。          
+          <br />
+          <br />    
+        在《道德经》第八章中，老子提出"上善若水。水善利万物而不争。”这里的"善”，并不是指人伦意义上的善良或做好事，而是指一种至高无上的德行或智慧。结合ESG（环境、社会和治理）框架加以理解，从环境层面，"善"可以理解为对自然环境的尊重和保护；从社会层面，"善"意味着对社会福祉的贡献和对社会责任的担当；从治理层面，"善"体现为保持原则和道德的一致性。将"善”的理念融入ESG框架，意味着追求一种和谐、平衡和可持续的发展方式，尊重所有利益相关者的权益。
+        <br />  <br />
+        </span>
+
+        <span class="font_141 text_14">
+          如何做到善治共赢，就是要在促进长期价值创造的同时，减少对社会和环境的负面影响。
+        </span>
+      </div> 
+    </div>
+   
+  </div>
+  <img
+    class="aboutimg4"
+    src="{% static 'images/aboutimg4.png' %}"
+  />
 </div>
+
+
+ 
 <div class="insection ingy3">
   
 </div>
@@ -77,9 +101,24 @@
   <div class="insection ingy5">
   
 </div>
-<div class="ingy6-wrap">
-    <div class="insection ingy6">   
-</div>
+
+<div style="text-align: center;"  class="ingy6-wrap">
+  <div class="insection">   
+  <span class="self-start text_356" >合作伙伴</span> 
+  <div  style="margin-top: 25px;">
+    <span class="font_9 text_14">
+      香港可持续发展协会将汇聚各方力量，促进ESG意识的普及和实践水平的提升，推动香港地区可持续发展目标的实现，
+  </span>
+    <br>
+    <span class="font_9 text_14">
+      为构建一个更加繁荣、公正和可持续的社会贡献力量。
+    </span> 
+  </div>
+  </div>
+</div>  
+
+ 
+
 <div class="w1400 center swiper-wrap-container">
 
 <div class="swiper" id="gyswiper">
@@ -99,8 +138,11 @@
   <div class="swiper-button-next"></div>
 </div>
 </div>
-{% include 'home/footer.html' %}
- 
+
+<div style="height: 144px;    background-color: #f6f6f6;"></div>
+<div id="footer">
+  {% include 'home/footer.html' %}
+</div> 
   </body>
     <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
   <script type="text/javascript">

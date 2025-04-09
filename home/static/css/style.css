@@ -807,6 +807,20 @@ img.block {
   font-family: SL;
   line-height: 50px;
 }
+.text_356 {
+  color: #129cbf;
+  font-size: 35px;
+  font-family: SL;
+  line-height: 50px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.text_3563 {
+  color: #000000;
+  font-size: 20px;
+  font-family: SL;
+  line-height: 50px;
+}
 .group_6 {
   line-height: 29px;
   text-align: center;
@@ -1005,6 +1019,10 @@ img.block {
   width: 604.5px;
   padding-left: 41px
 }
+.group_333 {
+  width: 830px;
+  padding-left: 30px
+}
 .font_13 {
   font-size: 35px;
   font-family: SL;
@@ -1025,6 +1043,15 @@ img.block {
   line-height: 28px;
   color: #000000;
 }
+.font_141 {
+  font-size: 15px;
+  font-family: Adobe Heiti Std;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #000000;
+  /*font-weight: bold;  /* 添加加粗属性 */
+
+}
 .text-wrapper_2 {
   padding: 8px 0;
   background-color: #73c9e0;
@@ -1038,6 +1065,10 @@ img.block {
 .image_4 {
   width: 631px;
   height: 404px;
+}
+.aboutimg4 {
+  width: 520px;
+  height: 385px;
 }
 .group_24 {
   margin-top: 125px;
@@ -1131,6 +1162,11 @@ img.block {
 }
 .text_20 {
   letter-spacing: 1.5px;
+}
+.text_222 {
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 .text_17 {
   font-size: 18px;
@@ -1349,12 +1385,21 @@ img.block {
 .gybanner{
     background-image: url(../images/gy4.png);
 }
+
+.about_ingy1{
+    height: 290px;
+}
+
 .ingy1{
     height: 290px; 
     background-image: url(../images/gy5.png);
 }
 .ingy2{
     height: 589px; background-image: url(../images/gy6.png);
+}
+
+.ingy22{
+  height: 589px; 
 }
 .ingy3{
     height: 460px; background-image: url(../images/gy7.png); background-color:#73b466 
@@ -1422,3 +1467,74 @@ img.block {
 .insection.ingy1 div {
   text-align: center;
 } */
+
+
+.esg-report-s {
+  margin-top: 20px; /* 顶部外边距 */
+}
+.esg-report-s p {
+  line-height: 1;
+  margin-bottom: 26px;
+  font-size: 16px; 
+}
+
+.esg-report {
+  margin-top: 20px; /* 顶部外边距 */
+}
+
+.esg-report h2 {
+  color: #18191a;
+  margin-top: -1px;
+  font-size: 16px;
+}
+
+.esg-report p {
+  line-height: 1;
+  margin-bottom: 26px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.esg-report-div {
+  line-height: 3;
+  margin-bottom: 26px;
+  font-size: 16px; 
+}
+
+.aboutimg4 {
+  max-width: 100%; /* 自适应宽度 */
+  height: auto; /* 自适应高度 */
+  margin-left: 20px; /* 左侧外边距 */
+}
+
+.esg-report-item {
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  margin-bottom: 15px; /* 底部外边距 */
+}
+
+.report-title {
+  color: black; /* 设置标题颜色为黑色 */
+  margin-right: 10px; /* 右侧外边距 */
+  font-size: 24px; /* 字体大小 */
+}
+.service-item {
+  position: relative; /* 使伪元素相对于该元素定位 */
+  padding-left: 20px; /* 为文本留出空间 */
+}
+
+.service-item::before {
+  content: ''; /* 伪元素内容为空 */
+  position: absolute; /* 绝对定位 */
+  left: 0; /* 左侧对齐 */
+  top: 50%; /* 垂直居中 */
+  transform: translateY(-50%); /* 使点垂直居中 */
+  width: 8px; /* 点的宽度 */
+  height: 8px; /* 点的高度 */
+  background-color: #129cbf; /* 点的颜色 */
+  border-radius: 50%; /* 圆形 */
+}
+
+.group_3333 {
+  width: 746px;
+  padding-left: 30px
+}
